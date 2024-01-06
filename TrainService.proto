@@ -1,0 +1,67 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.grpc";
+option java_outer_classname = "TrainServiceProto";
+
+service TrainService {
+    rpc PurchaseTicket (TicketRequest) returns (Receipt);
+    rpc GetReceiptDetails (ReceiptRequest) returns (ReceiptDetails);
+    rpc ViewUserSeats (SectionRequest) returns (UserSeats);
+    rpc RemoveUser (UserRequest) returns (RemoveUserResponse);
+    rpc ModifyUserSeat (ModifySeatRequest) returns (Receipt);
+}
+
+message TicketRequest {
+    string from = 1;
+    string to = 2;
+    User user = 3;
+}
+
+message User {
+    string firstName = 1;
+    string lastName = 2;
+    string email = 3;
+}
+
+message Receipt {
+    string from = 1;
+    string to = 2;
+    User user = 3;
+    float pricePaid = 4;
+    string seat = 5;
+}
+
+message ReceiptRequest {
+    string seat = 1;
+}
+
+message ReceiptDetails {
+    Receipt receipt = 1;
+}
+
+message SectionRequest {
+    string section = 1;
+}
+
+message UserSeats {
+    repeated UserSeat userSeats = 1;
+}
+
+message UserSeat {
+    User user = 1;
+    string seat = 2;
+}
+
+message UserRequest {
+    string email = 1;
+}
+
+message RemoveUserResponse {
+    bool success = 1;
+}
+
+message ModifySeatRequest {
+    string email = 1;
+    string newSeat = 2;
+}
