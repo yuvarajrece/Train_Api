@@ -1,0 +1,71 @@
+OutPut
+
+----- Purchase Ticket -----
+Enter your first name:
+John
+Enter your last name:
+Doe
+Enter your email address:
+john.doe@example.com
+Enter the departure location (e.g., London):
+London
+Enter the destination location (e.g., France):
+France
+Purchase successful! Receipt:
+from: "London"
+to: "France"
+user {
+  firstName: "John"
+  lastName: "Doe"
+  email: "john.doe@example.com"
+}
+pricePaid: 20.0
+seat: "A1"
+
+----- Get Receipt Details -----
+Enter the seat you want to retrieve details for:
+A1
+Receipt details:
+from: "London"
+to: "France"
+user {
+  firstName: "John"
+  lastName: "Doe"
+  email: "john.doe@example.com"
+}
+pricePaid: 20.0
+seat: "A1"
+
+----- View User Seats -----
+Enter the section you want to view (A or B):
+A
+Users and seats in Section A:
+userSeats {
+  user {
+    firstName: "John"
+    lastName: "Doe"
+    email: "john.doe@example.com"
+  }
+  seat: "A1"
+}
+
+----- Remove User -----
+Enter the email of the user to be removed:
+john.doe@example.com
+User with email john.doe@example.com removed successfully.
+
+----- Modify User Seat -----
+Enter the email of the user to modify:
+john.doe@example.com
+Enter the new seat for the user:
+A2
+Seat modification successful! New receipt details:
+from: "London"
+to: "France"
+user {
+  firstName: "John"
+  lastName: "Doe"
+  email: "john.doe@example.com"
+}
+pricePaid: 20.0
+seat: "A2"
