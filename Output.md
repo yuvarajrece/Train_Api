@@ -1,6 +1,7 @@
-#*OutPut*
+# OutPut
 
------ Purchase Ticket -----
+# #----- Purchase Ticket -----
+
 Enter your first name:
 Yuvaraj
 Enter your last name:
@@ -22,7 +23,7 @@ user {
 pricePaid: 20.0
 seat: "A1"
 
------ Get Receipt Details -----
+# #----- Get Receipt Details -----
 Enter the seat you want to retrieve details for:
 A1
 Receipt details:
@@ -36,7 +37,7 @@ user {
 pricePaid: 20.0
 seat: "A1"
 
------ View User Seats -----
+# #----- View User Seats -----
 Enter the section you want to view (A or B):
 A
 Users and seats in Section A:
@@ -49,12 +50,12 @@ userSeats {
   seat: "A7"
 }
 
------ Remove User -----
+# #----- Remove User -----
 Enter the email of the user to be removed:
 yuvi@example.com
 User with email yuvi@example.com removed successfully.
 
------ Modify User Seat -----
+# #----- Modify User Seat -----
 Enter the email of the user to modify:
 yuvi@example.com
 Enter the new seat for the user:
