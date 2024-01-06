@@ -7,7 +7,7 @@ Yuvaraj
 Enter your last name:
 R
 Enter your email address:
-john.yuvi@example.com
+yuvi@example.com
 Enter the departure location (e.g., London):
 London
 Enter the destination location (e.g., France):
