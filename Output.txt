@@ -1,4 +1,4 @@
-OutPut
+##*OutPut*##
 
 ----- Purchase Ticket -----
 Enter your first name:
