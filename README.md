@@ -29,3 +29,14 @@ If you can run the code in your local development environment. Here's a brief ex
    - The response will be printed, showing the details of the modified receipt or indicating that no user was found with the provided email for seat modification.
 
 Run the `TrainServer` class first to start the gRPC server, and then run the `TrainClient` class to interact with the server. Adjust the prompts and input as needed during the execution of the client application.
+
+
+**Generate Java code from the protocol buffer file using the protoc compiler:**
+
+
+protoc --plugin=protoc-gen-grpc-java=/path/to/protoc-gen-grpc-java --java_out=src --grpc-java_out=src TrainService.proto
+
+
+
+Make sure to replace /path/to/protoc-gen-grpc-java with the actual path to the protoc-gen-grpc-java plugin on your machine.
+
